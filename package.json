@@ -5,7 +5,7 @@
 	"type": "module",
 	"scripts": {
 		"build-and-test": "docker build --platform linux/amd64 -t cypress-ssl-fail . && npm run test",
-		"test": "docker run --platform linux/amd64 -p 4177:4177 cypress-ssl-fail npx cypress run --browser chrome --spec 'cypress/e2e/s3-fail-test.cy.js'"
+		"test": "docker run --platform linux/amd64 cypress-ssl-fail npx cypress run --browser chrome --spec 'cypress/e2e/s3-fail-test.cy.js'"
 	},
 	"devDependencies": {
 		"cypress": "^15.7.0"
