@@ -1,5 +1,9 @@
 # Demo of Cypress Docker SSL Problem
 
+## Dependencies
+
+- Docker
+
 ## How to run
 
 `npm run build-and-test`
